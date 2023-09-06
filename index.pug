@@ -1,0 +1,179 @@
+doctype html
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title ポートフォリオ
+        // js 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        // /js
+        
+        // css
+        link(rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css")
+        link(rel="stylesheet" type="text/css" href="./app.css")
+        link(rel="stylesheet" type="text/css" href="./フッター/footer_html.css")
+        // /css 
+    body 
+        #app 
+            // ヘッダー
+            header
+                // タイトル
+                h1 ポートフォリオ
+                // /タイトル
+
+                // バーガーボタン
+                #burger(type="button", v-on:click="{on = !on, off = !off}")
+                    span.line1(v-bind:class="{'line_on_1':on}")
+                    span.line2(v-bind:class="{'line_on_2':on}")
+                    span.line3(v-bind:class="{'line_on_3':on}")
+                // /バーガーボタン
+
+                // バーガーメニュー
+                
+                // バーガーメニューpc
+                ul.menu_pc 
+                    li 
+                        a(href="#selfIntroduction") 自己紹介 
+                    li
+                        a(href="#skill") スキル
+                    li 
+                        a(href="#contact") お問合せフォーム
+                // /バーガーメニューpc
+
+            // /ヘッダー
+
+            // バーガーメニューsp
+            ul.menu_sp(v-bind:class="{'burger_on':on}")
+                    li 
+                        a(href="#selfIntroduction") 自己紹介 
+                    li
+                        a(href="#skill") スキル
+                    li 
+                        a(href="#contact") お問合せフォーム
+            // /バーガーメニューsp
+
+            // バーガーメニューsp_背景
+            .menu_filter( v-on:click="{on = !on}", v-bind:class="{'menu_filter_on':on}") 
+            // /バーガーメニューsp_背景
+            // /バーガーメニュー
+
+            // メイン
+            mein
+                
+                // イントロ
+                #SlickSlider
+                    .Slick
+                        img(src="./img/index_intoro_slik_img_1.jpg", alt="")
+                    .Slick
+                        img(src="./img/index_intoro_slik_img_2.jpg", alt="")
+                    .Slick
+                        img(src="./img/index_intoro_slik_img_3.jpg", alt="")
+                    .Slick
+                        img(src="./img/index_intoro_slik_img_4.jpg", alt="")
+                // /イントロ
+                
+                // 自己紹介
+                #selfIntroduction
+                    h2 自己紹介
+
+                    ul 
+                        li
+                            h4 名前：
+                            p 別府　佳和 
+                        li
+                            h4 履歴：
+                            p 大阪動植物海洋専門学校　卒業
+                                br 
+                                | 辻調理師専門学校１年　卒業
+                        li 
+                            h4 資格：
+                            p 調理師免許　所得
+                        li 
+                            h4 勉強歴：
+                            p タイピングの基礎所得状態から２０２２年４月WEB勉強開始
+                        li 
+                            h4 目標：
+                            p  WEBデレクション
+                // /自己紹介
+
+                // スキル
+                #skill
+                    h2 スキル
+                    // WEBデザイン
+                    .webDesign
+                         h3 WEBデザイン
+                         ul 
+                             li 
+                                h4 できること：
+                                p 全体設計図、ワイヤーフレーム、デザイン画、グローバルデザイン。
+                             li 
+                                h4 使用ツール：
+                                p Figma、GIMP。
+                    // /WEBデザイン
+
+                    // コーデング
+                    .cordeng
+                        h3 コーディング
+                        ul 
+                            li 
+                                h4 使用ファイル：
+                                p HTML、pug、CSS、SCSS、JavaScript。 
+                            li 
+                                h4  できること：
+                                p img内リンク、slickスライダー、ファイル内リンク、バーガーメニュー。
+                            li 
+                                h4 フレームワーク：
+                                p react、veu.js。
+                    // /コーデング
+
+                    // サーバーサイド
+                    .server-side
+                        h3 サーバーサイド
+                        ul 
+                            li 
+                                h4 使用ファイル：
+                                p php 
+                            li 
+                                h4 できること：
+                                p mysqlへの接続
+                            li 
+                                h4 ツール：
+                                p XAMPP 
+                    // /サーバーサイド
+
+                    // 勉強予定
+                    .planToStudy
+                    
+                        // タイトル
+                        h3 勉強予定
+                        // /タイトル
+
+                        // 内容
+                        ul 
+                            li アニメーションなどの今あるデザイン力の強化。 
+                            li javaによるアプリやwebアプリの作成。
+                            li 動画作成編集技術。
+                            li QRコードの作成のしかた。
+                        // /内容
+
+                    // /勉強予定
+                // /スキル
+
+                // お問合せフォーム
+                a(href="./お問合せフォーム/contactForm.html")#contact 
+                    p お問合せフォーム
+                // /お問合せフォーム
+
+            // /メイン
+            
+            // フッター
+            iframe.footer(src="./フッター/footer.html", frameborder="0" ) 
+            // /フッター
+
+
+
+        // js
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        script(type="text/javascript" src="./slick-1.8.1/slick/slick.js")
+        script(type="text/javascript" src="./app.js")
+        // /js
