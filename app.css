@@ -34,9 +34,6 @@ mein {
   position: relative;
   margin: auto;
 }
-mein #SlickSlider {
-  pointer-events: none;
-}
 mein #SlickSlider .slick-list .slick-track .slick-slide .Slick img {
   width: 100%;
 }
