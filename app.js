@@ -5,6 +5,7 @@ $('#SlickSlider').slick({
     centerMode: true,
     centerPadding: '50px',
     arrows: false,
+    dots: true,
 
      responsive: [{
         breakpoint: 990, // ブレイクポイントを指定
