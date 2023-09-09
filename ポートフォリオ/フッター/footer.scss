@@ -89,6 +89,7 @@ footer{
     }
     // /フッターsp
 =======
+<<<<<<< HEAD
 $zero: 0 0 0 0;
 
 
@@ -178,5 +179,96 @@ footer{
         }
     }
     // /フッターsp
+=======
+$zero: 0 0 0 0;
+
+
+
+h2{
+    margin: $zero;
+}
+
+ul,
+li {
+    margin: $zero;
+    padding: $zero;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: $zero;
+    padding: $zero;
+    display: block;
+    
+}
+// フッター
+footer{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    ul{
+        // フッター＿タイトル
+        h2{
+            width: 170px;
+            color: white;
+            margin: auto;
+        }
+        // /フッター＿タイトル
+
+        // 文書
+        li{
+            color: white;
+            margin: auto;
+        }
+        .text1{width: 170px;}
+        .text2 {width: 360px;}
+        .text3 {width: 330px;}
+        // /文書
+            }
+    }
+
+    // フッターsp
+    @media screen and (max-width: 960px) {
+        footer {
+
+
+            ul {
+
+                // フッター＿タイトル
+                h2 {
+                    font-size: 20px;
+                    width: 140px;
+
+                }
+                // /フッター＿タイトル
+
+                // 文書
+                li {
+                    color: white;
+                    margin: auto;
+                    font-size: 2px;
+                }
+
+                .text1 {
+                    width: 100px;
+                }
+
+                .text2 {
+                    width: 220px;
+                }
+
+                .text3 {
+                    width: 190px;
+                }
+                // /文書
+            }
+        }
+    }
+    // /フッターsp
+>>>>>>> b07875910e2de498c35737c833ca53d5628d92a6
 >>>>>>> 5ef3362414ec97123d807e8b12dc7d4c996e01db
 // /フッター

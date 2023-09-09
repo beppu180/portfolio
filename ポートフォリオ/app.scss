@@ -431,6 +431,7 @@ mein{
     }
 }
 =======
+<<<<<<< HEAD
 $zero: 0 0 0 0;
 
 // margin消去
@@ -862,5 +863,438 @@ mein{
         // /メイン
     }
 }
+=======
+$zero: 0 0 0 0;
+
+// margin消去
+h1,h2,h3,h4 {
+    margin: $zero;
+}
+
+ul,
+li {
+    margin: $zero;
+    padding: $zero;
+}
+
+body {
+    margin: $zero;
+    padding: $zero;
+}
+// /margin消去
+
+// スタイル消去
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+// /スタイル消去
+
+
+// ヘッダー
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+// /ヘッダー
+
+// メイン
+mein{
+    display: block;
+    position: relative;
+    margin: auto;
+    
+    // スライダー
+    #SlickSlider {
+
+        .slick-list{
+
+            .slick-track {
+
+                .slick-slide{
+
+                    .Slick{
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // /スライダー
+
+    // 自己紹介
+    #selfIntroduction{
+
+        //  タイトル
+        h2{
+            width: 100px;
+            margin: auto;
+            position: relative;
+            margin-top: 30px;
+        }
+        //  /タイトル
+
+        // 内容
+        ul{
+            width: 30%;
+            margin: auto;
+
+            li{
+                display: flex;
+
+                h4{
+                    width: 100px;
+                    height: 20px;
+                    margin-top: 16px;
+                }
+
+                p{
+                    width: 230px;
+                }
+            }
+        }
+        // /内容
+    }
+    // /自己紹介
+
+    // スキル
+    #skill{
+        margin-top: 50px;
+
+        // タイトル
+        h2{
+            width: 75px;
+            margin: auto;
+        }
+        // /タイトル
+
+        // 内容
+        ul{
+            width: 40%;
+            margin: auto;
+            li{
+                display: flex;
+
+                h4{
+                    width: 130px;
+                    height: 20px;
+                    margin-top: 16px;
+                }
+
+                p{
+                    width: 240px;
+                    margin-left: 20px;
+                }
+            }
+        }
+        // /内容
+
+    }
+    // /スキル
+
+    // お問い合わせフォーム＿ボタン
+    a{
+    display: block;
+    width: 210px;
+    height: 70px;
+    background-color: black;
+    margin: auto;
+    
+    p{
+        position: relative;
+        width: 130px;
+        margin: auto;
+        top: 20px;
+        color: white;
+    }
+    }
+    // /お問い合わせフォーム＿ボタン
+}
+// /メイン
+
+
+// グローバルスタイル_pc
+@media screen and (min-width: 961px){
+
+   header {
+    height: 100px;
+        // タイトル
+       h1 {
+           width: 450px;
+           margin: auto;
+       }
+       // /タイトル
+
+    //    バーガーメニュー
+       .menu_pc {
+           display: flex;
+           margin-top: 15px;
+           li{
+            margin-left: 22%
+           };
+       }
+       #burger{
+        display: none;
+       }
+   }
+
+   .menu_sp{
+    display: none;
+   }
+   //    /バーガーメニュー
+
+    mein {
+        display: block;
+        position: relative;
+        margin-top: 100px;
+        width: 80%;
+        // スライダー
+        #SlickSlider {
+
+            .slick-list {
+
+                .slick-track {
+
+                    .slick-slide {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        // /スライダー
+    
+        // スキル
+        #skill {
+            margin-top: 50px;
+            // タイトル
+            h3 {
+                width: 140px;
+                margin-left: 350px;
+                margin-top: 60px;
+            }
+            // /タイトル
+
+            // 内容
+            ul {
+                width: 40%;
+                li {
+                    display: flex;
+                    h4 {
+                        width: 130px;
+                        height: 20px;
+                        margin-top: 16px;
+                    }
+                    p {
+                        width: 240px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            // 勉強予定
+            .planToStudy {
+                h3 {
+                    margin-bottom: 16px;
+                }
+
+                ul{
+                    li{
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+            // /勉強予定
+            // /内容
+        }
+        // /スキル
+
+        // お問合せフォーム＿ボタン
+        a {
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+        // /お問合せフォーム＿ボタン
+    }
+}
+// /グローバルスタイル_pc
+
+
+// グローバルスタイル_sp
+@media screen and (max-width: 960px){
+    header{
+        display: flex;
+        height: 90px;
+        align-items: center;
+
+        // タイトル
+        h1 {
+            width: 120px;
+            height: 30px;
+            font-size: 100%;
+            margin-left: 20%;
+        }
+        // /タイトル
+
+        // バーガーボタン
+        #burger {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-left: 10%;
+            border: solid black 1px;
+            z-index: 3;
+            
+            // ラインスタイル
+            span {
+                display: block;
+                width: 20px;
+                height: 0;
+                margin: auto;
+                border: solid black 1px;
+            }
+
+            .line1{
+                margin-top: 5px;
+            }
+            .line2{
+                margin-top: 8px;
+            }
+            .line3{
+                margin-top: 8px;
+            }
+
+            .line_on_1{
+                display: block;
+                position: relative;
+                transform: rotate(45deg);
+                top: 9px;
+            }
+            .line_on_2{
+                 opacity: 0;
+            }
+            .line_on_3{
+                display: block;
+                position: relative;
+                transform: rotate(-45deg);
+                bottom: 10px;
+            }
+            // /ラインスタイル
+        }
+        // /バーガーボタン
+
+        // バーガーメニュー
+        // バーガーメニュー＿pc
+        .menu_pc {
+            display: none;
+        }
+        // /バーガーメニュー＿pc
+    }
+    // バーガーメニュー＿sp
+    .menu_sp {
+        display: block;
+        background-color: white;
+        width: 50%;
+        position: fixed;
+        z-index: 2;
+        left: -300px;
+
+        li{
+            margin-bottom: 40px;
+
+            a{
+                display: block;
+                width: 80px;
+                margin: auto;
+            }
+        }
+    }
+    .burger_on {
+        left: 100px;
+    }
+    // /バーガーメニュー＿sp
+
+    // バーガー背景
+    .menu_filter{
+        display: none;
+    }
+
+    .menu_filter_on{
+        display: block;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    // /バーガー背景
+    // /バーガーメニュー
+
+    // メイン
+    mein {
+        margin-top: 90px;
+        width: 90%;
+
+        // 自己紹介
+        #selfIntroduction {
+
+            ul {
+                width: 100%;
+            }
+        }
+        // /自己紹介
+
+        // スキル
+        #skill {
+            margin-top: 50px;
+
+            // 内容
+            // タイトル
+            h2 {
+                width: 75px;
+                margin: auto;
+            }
+            // /タイトル
+
+            // タイトルサブ
+            h3 {
+                width: 140px;
+                margin-top: 16px;
+            }
+            // /タイトルサブ
+
+            ul {
+                width: 100%;
+                li{
+                    margin-top: 16px;
+
+                    h4 {
+                        width: 170px;
+                        
+                    }
+                }
+            }
+            // /内容
+        }
+        // /スキル
+
+        // お問合せフォーム＿ボタン
+        a{
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        // /お問合せフォーム＿ボタン
+        // /メイン
+    }
+}
+>>>>>>> b07875910e2de498c35737c833ca53d5628d92a6
 >>>>>>> 5ef3362414ec97123d807e8b12dc7d4c996e01db
 // /グローバルスタイル_sp
