@@ -1,0 +1,69 @@
+h1 {
+  margin: 0 0 0 0;
+}
+
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  border: solid black 1px;
+  align-items: center;
+}
+header h1 {
+  width: 260px;
+  margin-top: 10px;
+  margin: auto;
+}
+header .homeButton {
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+header .homeButton a {
+  width: 100%;
+  height: 100%;
+}
+header .homeButton a p {
+  width: 55px;
+  margin: auto;
+  margin-top: 8px;
+}
+
+mein {
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+mein section form dl .text {
+  display: flex;
+  margin-top: 40px;
+}
+mein section form dl .text dd {
+  width: 400px;
+}
+mein section form dl .text dd input {
+  width: 400px;
+}
+mein section form dl .text dd textarea {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+mein section form dl .text .data {
+  position: relative;
+  left: 15px;
+}
+mein section form dl .button {
+  width: 40px;
+  margin: auto;
+  margin-top: 30px;
+}

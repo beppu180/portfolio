@@ -1,0 +1,66 @@
+doctype html
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title お問合せフォーム
+
+        // css 
+        link(rel="stylesheet" type="text/css" href="./contactForm.css")
+        link(rel="stylesheet" type="text/css" href="../フッター/footer_html.css")
+        // /css 
+    body
+        // /ヘッダー 
+        header 
+            // タイトル
+            h1 お問合せフォーム
+            // /タイトル
+
+            // ホームボタン
+            .homeButton
+                a(type="button", href="../index.html") 
+                    p ホーム
+            // /ホームボタン
+
+        // /ヘッダー
+
+        
+        mein
+            section.p-sec_Contact#Contact 
+                // お問い合わせホーム            
+                form(action="./contactformdeta.php" method="post")
+                    dl
+                        // 名前
+                        .text 
+                            dt 
+                                label(for="name") 名前：
+                            dd.data
+                                input#name(type="text" required name="your-name")
+                        // /名前
+
+                        // メアド
+                        .text
+                            dt 
+                                label(for="email") メアド： 
+                            dd
+                                input#email(type="email" required  name="your-email")
+                        // メアド
+                        
+                        // 文章
+                        .text
+                            dt 
+                                label(for="message") 文章： 
+                            dd.data
+                                textarea#message( name="your-message"  rows="100") 
+                        // /文章
+
+                        // 送信ボタン
+                        .button
+                            input(type="submit" value="通信" name="send")
+                        // /送信ボタン
+                        
+                // /お問い合わせホーム
+
+        // フッター
+        iframe.footer(src="../フッター/footer.html", frameborder="0" ) 
+        // /フッター
