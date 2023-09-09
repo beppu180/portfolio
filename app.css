@@ -37,6 +37,9 @@ mein {
 mein #SlickSlider .slick-list .slick-track .slick-slide .Slick img {
   width: 100%;
 }
+mein .slide_target {
+  pointer-events: none;
+}
 mein #selfIntroduction h2 {
   width: 100px;
   margin: auto;
