@@ -1,13 +1,10 @@
 // スリックスライダー
-$('#SlickSlider').on({
+$('#SlickSlider').slick({
     adaptiveHeight: true,
     autoplay: true,
     centerMode: true,
     centerPadding: '50px',
     arrows: false,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    pauseOnDotsHover: false,
 
      responsive: [{
         breakpoint: 990, // ブレイクポイントを指定
