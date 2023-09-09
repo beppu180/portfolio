@@ -46,6 +46,7 @@ mein{
     
     // スライダー
     #SlickSlider {
+        pointer-events: none;
 
         .slick-list{
 
@@ -62,10 +63,6 @@ mein{
                 }
             }
         }
-    }
-
-    .slide_target {
-        pointer-events: none;
     }
     // /スライダー
 
