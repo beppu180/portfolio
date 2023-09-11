@@ -22,7 +22,7 @@ html(lang="ja")
                 // /タイトル
 
                 // バーガーボタン
-                #burger(type="button", v-on:click="{on = !on, off = !off}")
+                #burger(type="button", v-on:click="{on = !on , off = !off}")
                     span.line1(v-bind:class="{'line_on_1':on}")
                     span.line2(v-bind:class="{'line_on_2':on}")
                     span.line3(v-bind:class="{'line_on_3':on}")

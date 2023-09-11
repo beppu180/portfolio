@@ -1,3 +1,14 @@
+// バーガースイッチ
+var app = new Vue({
+    el: '#app',
+    data: {
+        on: false,
+        off: true
+    }
+});
+// /バーガースイッチ
+
+
 // スリックスライダー
 $('#SlickSlider').slick({
     adaptiveHeight: true,
@@ -5,6 +16,9 @@ $('#SlickSlider').slick({
     centerMode: true,
     centerPadding: '50px',
     arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
 
      responsive: [{
         breakpoint: 990, // ブレイクポイントを指定
@@ -18,12 +32,3 @@ $('#SlickSlider').slick({
 });
 // /スリックスライダー
 
-// バーガースイッチ
-var app = new Vue({
-    el: '#app',
-    data: {
-        on: false,
-        off: true
-    }
-});
-// /バーガースイッチ
