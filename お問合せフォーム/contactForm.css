@@ -67,3 +67,48 @@ mein section form dl .button {
   margin: auto;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 960px) {
+  body {
+    display: block;
+    width: 100%;
+  }
+  body mein {
+    width: 100%;
+  }
+  body mein section form dl .text {
+    display: block;
+    margin-top: 40px;
+    position: relative;
+    left: 10px;
+  }
+  body mein section form dl .text dt {
+    width: 65px;
+    position: relative;
+    left: 54px;
+  }
+  body mein section form dl .text .email {
+    position: relative;
+    left: 20px;
+  }
+  body mein section form dl .text dd {
+    width: 200px;
+  }
+  body mein section form dl .text dd input {
+    width: 200px;
+  }
+  body mein section form dl .text dd textarea {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+  }
+  body mein section form dl .text .data {
+    position: relative;
+    left: 15px;
+  }
+  body mein section form dl .button {
+    width: 40px;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

@@ -18,7 +18,7 @@ a {
 }
 // スタイル消去
 
-
+// ヘッダー
 header{
     width: 100%;
     border: solid black 1px;
@@ -29,6 +29,7 @@ header{
         margin: auto;
     }
 
+    // ホームボタン
     .homeButton{
         width: 100px;
         height: 40px;
@@ -48,8 +49,11 @@ header{
             }
         }
     }
+    // /ホームボタン
 }
+// /ヘッダー
 
+    // メイン
  mein {
     display: block;
     width: 40%;
@@ -57,12 +61,14 @@ header{
 
     section{
 
+        // お問合せフォーム＿内容
         form{
             dl{
                 .text{
                     display: flex;
                     margin-top: 40px;
 
+                    // 入力バー
                     dd{
                         width: 400px;
 
@@ -82,15 +88,93 @@ header{
                         position: relative;
                         left: 15px;
                     }
-
-                    
+                    // /入力バー
                 }
+
+                // 通信ボタン
                 .button{
                     width: 40px;
                     margin: auto;
                     margin-top: 30px;
                 }
+                // /通信ボタン
             }
         }
+        // /お問合せフォーム＿内容
     }
 }
+ // /メイン
+
+// グローバルスタイル_sp
+@media screen and (max-width: 960px) {
+    body{
+        display: block;
+        width: 100%;
+
+        // メイン
+        mein{
+            width: 100%;
+
+            section {
+                // 内容
+                form {
+                    dl {
+                        .text {
+                            display: block;
+                            margin-top: 40px;
+                            position: relative;
+                            left: 10px;
+
+                            // タイトル
+                            dt{
+                                width: 65px;
+                                position: relative;
+                                left: 54px;
+                            }
+                            // /タイトル
+
+                            // 入力バー
+                            .email {
+                                position: relative;
+                                left: 20px;
+                            }
+
+                            dd {
+                                width: 200px;
+
+                                input {
+                                    width: 200px;
+                                }
+
+                                textarea {
+                                    width: 200px;
+                                    height: 100px;
+                                    padding: 10px;
+                                }
+                            }
+
+                            .data {
+                                position: relative;
+                                left: 15px;
+                            }
+                            // /入力バー
+
+
+                        }
+
+                        // 通信ボタン
+                        .button {
+                            width: 40px;
+                            margin: auto;
+                            margin-top: 30px;
+                        }
+                        // /通信ボタン
+                    }
+                }
+                // /内容
+            }
+        }
+        // /メイン
+    }
+}
+// /グローバルスタイル_sp
