@@ -269,6 +269,8 @@ mein{
         display: flex;
         height: 90px;
         align-items: center;
+        position: fixed;
+        top: 577px;
 
         // タイトル
         h1 {
@@ -341,6 +343,8 @@ mein{
         position: fixed;
         z-index: 2;
         left: -300px;
+        top: 200px;
+
 
         li{
             margin-bottom: 40px;
@@ -375,7 +379,6 @@ mein{
 
     // メイン
     mein {
-        margin-top: 90px;
         width: 90%;
 
         // 自己紹介
@@ -428,6 +431,10 @@ mein{
         }
         // /お問合せフォーム＿ボタン
         // /メイン
+    }
+
+    .footer{
+        margin-bottom: 90px;
     }
 }
 // /グローバルスタイル_sp

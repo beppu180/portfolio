@@ -34,9 +34,9 @@
       <!-- /ヘッダー-->
       <!-- バーガーメニューsp-->
       <ul class="menu_sp" v-bind:class="{'burger_on':on}">
-        <li> <a href="#selfIntroduction">自己紹介 </a></li>
-        <li><a href="#skill">スキル</a></li>
-        <li> <a href="#contact">お問合せフォーム</a></li>
+        <li v-on:click="{on = !on}"><a href="#selfIntroduction">自己紹介 </a></li>
+        <li v-on:click="{on = !on}"><a href="#skill">スキル</a></li>
+        <li v-on:click="{on = !on}"> <a href="#contact">お問合せフォーム</a></li>
       </ul>
       <!-- /バーガーメニューsp-->
       <!-- バーガーメニューsp_背景-->

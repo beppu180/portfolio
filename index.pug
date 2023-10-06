@@ -44,11 +44,11 @@ html(lang="ja")
 
             // バーガーメニューsp
             ul.menu_sp(v-bind:class="{'burger_on':on}")
-                li 
+                li(v-on:click="{on = !on}")
                     a(href="#selfIntroduction") 自己紹介 
-                li
+                li(v-on:click="{on = !on}")
                     a(href="#skill") スキル
-                li 
+                li(v-on:click="{on = !on}") 
                     a(href="#contact") お問合せフォーム
             // /バーガーメニューsp
 

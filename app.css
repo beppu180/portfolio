@@ -167,6 +167,8 @@ mein a p {
     display: flex;
     height: 90px;
     align-items: center;
+    position: fixed;
+    top: 577px;
   }
   header h1 {
     width: 120px;
@@ -224,6 +226,7 @@ mein a p {
     position: fixed;
     z-index: 2;
     left: -300px;
+    top: 200px;
   }
   .menu_sp li {
     margin-bottom: 40px;
@@ -252,7 +255,6 @@ mein a p {
   }
 
   mein {
-    margin-top: 90px;
     width: 90%;
   }
   mein #selfIntroduction ul {
@@ -281,5 +283,9 @@ mein a p {
   mein a {
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+
+  .footer {
+    margin-bottom: 90px;
   }
 }
