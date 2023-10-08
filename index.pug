@@ -49,7 +49,7 @@ html(lang="ja")
                 li(v-on:click="{on = !on}")
                     a(href="#skill") スキル
                 li(v-on:click="{on = !on}") 
-                    a(href="#contact") お問合せフォーム
+                    a(href="#contact") お問い合せフォーム
             // /バーガーメニューsp
 
             // バーガーメニューsp_背景
@@ -64,13 +64,17 @@ html(lang="ja")
                 // イントロ
                 #SlickSlider
                     .Slick
-                        img(src="./img/index_intoro_slik_img_1.jpg", alt="")
+                        img(src="./img/DSC_0005~2.jpg", alt="")
                     .Slick
-                        img(src="./img/index_intoro_slik_img_2.jpg", alt="")
+                        a(href="#selfIntroduction")
+                            img(src="./img/index_intro_Slick_self-introduction.png", alt="")
                     .Slick
-                        img(src="./img/index_intoro_slik_img_3.jpg", alt="")
+                        a(href="#skill")
+                            img(src="./img/index_intro_Slick_skill.png", alt="")
                     .Slick
-                        img(src="./img/index_intoro_slik_img_4.jpg", alt="")
+                        a(href="#contact")
+                            img(src="./img/index_intro_Slick_Inquiry form.png", alt="")
+                    
                 // /イントロ
                 
                 // 自己紹介
@@ -162,7 +166,7 @@ html(lang="ja")
 
                 // お問合せフォーム
                 a(href="./お問合せフォーム/contactForm.html")#contact 
-                    p お問合せフォーム
+                    p お問い合せフォーム
                 // /お問合せフォーム
 
             // /メイン

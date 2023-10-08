@@ -14,7 +14,7 @@ $('#SlickSlider').slick({
     adaptiveHeight: true,
     autoplay: true,
     centerMode: true,
-    centerPadding: '50px',
+    centerPadding: '300px',
     arrows: false,
     pauseOnFocus: false,
     pauseOnHover: false,

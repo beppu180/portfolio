@@ -37,6 +37,16 @@ mein {
 mein #SlickSlider .slick-list .slick-track .slick-slide .Slick img {
   width: 100%;
 }
+mein #SlickSlider .slick-list .slick-track .slick-slide .Slick a {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+mein #SlickSlider .slick-list .slick-track .slick-slide .Slick a img {
+  width: 100%;
+  height: 100%;
+}
 mein #selfIntroduction h2 {
   width: 100px;
   margin: auto;
@@ -90,7 +100,7 @@ mein a {
 }
 mein a p {
   position: relative;
-  width: 130px;
+  width: 150px;
   margin: auto;
   top: 20px;
   color: white;
@@ -101,7 +111,7 @@ mein a p {
     height: 100px;
   }
   header h1 {
-    width: 450px;
+    width: 230px;
     margin: auto;
   }
   header .menu_pc {
@@ -126,7 +136,8 @@ mein a p {
     width: 80%;
   }
   mein #SlickSlider .slick-list .slick-track .slick-slide {
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   mein #skill {
     margin-top: 50px;
