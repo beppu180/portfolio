@@ -88,9 +88,21 @@ mein{
         //  /タイトル
 
         // 内容
+        .selfIntroduction{
+            position: relative;
+            display: flex;
+        
+            
+        
+        img{
+            width: 20%;
+            margin: auto;
+            }
         ul{
+            display: block;
             width: 30%;
             margin: auto;
+            
 
             li{
                 display: flex;
@@ -106,6 +118,7 @@ mein{
                 }
             }
         }
+    }
         // /内容
     }
     // /自己紹介

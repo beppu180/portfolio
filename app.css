@@ -53,19 +53,28 @@ mein #selfIntroduction h2 {
   position: relative;
   margin-top: 30px;
 }
-mein #selfIntroduction ul {
+mein #selfIntroduction .selfIntroduction {
+  position: relative;
+  display: flex;
+}
+mein #selfIntroduction .selfIntroduction img {
+  width: 20%;
+  margin: auto;
+}
+mein #selfIntroduction .selfIntroduction ul {
+  display: block;
   width: 30%;
   margin: auto;
 }
-mein #selfIntroduction ul li {
+mein #selfIntroduction .selfIntroduction ul li {
   display: flex;
 }
-mein #selfIntroduction ul li h4 {
+mein #selfIntroduction .selfIntroduction ul li h4 {
   width: 100px;
   height: 20px;
   margin-top: 16px;
 }
-mein #selfIntroduction ul li p {
+mein #selfIntroduction .selfIntroduction ul li p {
   width: 230px;
 }
 mein #skill {
