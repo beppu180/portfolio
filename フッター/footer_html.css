@@ -3,7 +3,7 @@ body iframe {
   vertical-align: bottom;
 }
 body .footer {
-  height: 110px;
+  height: 140px;
 }
 
 @media screen and (max-width: 960px) {

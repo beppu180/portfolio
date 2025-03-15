@@ -42,6 +42,9 @@ footer ul .text2 {
 footer ul .text3 {
   width: 330px;
 }
+footer ul .text4 {
+  width: 300px;
+}
 
 @media screen and (max-width: 960px) {
   footer ul h2 {
@@ -61,5 +64,8 @@ footer ul .text3 {
   }
   footer ul .text3 {
     width: 190px;
+  }
+  footer ul .text4 {
+    width: 10px;
   }
 }
