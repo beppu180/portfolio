@@ -52,17 +52,20 @@ footer{
             }
     }
 
-    // フッターsp
-    @media screen and (max-width: 960px) {
+// グローバルスタイル_sp
+@media screen and (max-width: 960px) {
         footer {
-
+            margin-top: 0;
+            top: 15px;
+            height: 120px;
+            
 
             ul {
 
                 // フッター＿タイトル
                 h2 {
                     font-size: 20px;
-                    width: 140px;
+                    width: 150px;
 
                 }
                 // /フッター＿タイトル
@@ -71,7 +74,7 @@ footer{
                 li {
                     color: white;
                     margin: auto;
-                    font-size: 2px;
+                    font-size: 10px;
                 }
 
                 .text1 {
@@ -83,11 +86,11 @@ footer{
                 }
 
                .text3 {
-                    width: 190px;
+                    width: 200px;
                 }
 
                 .text4 {
-                    width: 10px;
+                    width: 150px;
                 }
                 // /文書
             }

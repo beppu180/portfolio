@@ -47,14 +47,19 @@ footer ul .text4 {
 }
 
 @media screen and (max-width: 960px) {
+  footer {
+    margin-top: 0;
+    top: 15px;
+    height: 120px;
+  }
   footer ul h2 {
     font-size: 20px;
-    width: 140px;
+    width: 150px;
   }
   footer ul li {
     color: white;
     margin: auto;
-    font-size: 2px;
+    font-size: 10px;
   }
   footer ul .text1 {
     width: 100px;
@@ -63,9 +68,9 @@ footer ul .text4 {
     width: 220px;
   }
   footer ul .text3 {
-    width: 190px;
+    width: 200px;
   }
   footer ul .text4 {
-    width: 10px;
+    width: 150px;
   }
 }

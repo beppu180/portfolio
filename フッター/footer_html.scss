@@ -6,12 +6,25 @@ iframe {
 }
 // /iframe表示面積
 
-// フッター面積
-.footer {
-    height: 140px;
+
 }
-// /フッター面積
+
+// pc
+// グローバルスタイル_pc
+@media screen and (min-width: 961px) {
+    body {
+
+        // フッター面積
+        .footer {
+            margin-top:20px;
+            height: 128px;
+        }
+
+        // /フッター面積
+    }
 }
+
+// /pc
 
 // sp
  @media screen and (max-width: 960px){
@@ -19,7 +32,7 @@ iframe {
 
         // フッター面積
         .footer {
-            height: 74px;
+        height: 120px;
         }
         // /フッター面積
     }

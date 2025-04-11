@@ -30,6 +30,7 @@ a {
 
 // ヘッダー
 header {
+    display: block;
     position: fixed;
     top: 0;
     width: 100%;
@@ -77,6 +78,7 @@ mein{
 
     // 自己紹介
     #selfIntroduction{
+        margin: auto;
 
         //  タイトル
         h2{
@@ -90,17 +92,9 @@ mein{
         // 内容
         .selfIntroduction{
             position: relative;
-            display: flex;
-        
-            
-        
-        img{
-            width: 20%;
-            margin: auto;
-            }
+
         ul{
             display: block;
-            width: 30%;
             margin: auto;
             
 
@@ -183,6 +177,7 @@ mein{
 @media screen and (min-width: 961px){
 
    header {
+    
     height: 100px;
         // タイトル
        h1 {
@@ -228,8 +223,50 @@ mein{
                 }
             }
         }
+    }
+
         // /スライダー
-    
+
+        // 自己紹介
+        #selfIntroduction {
+
+            // 内容
+            .selfIntroduction {
+                position: relative;
+                display: flex;
+
+                img {
+                    width: 20%;
+                    margin: auto;
+                }
+
+                ul {
+                    display: block;
+                    width: 30%;
+                    margin: auto;
+
+
+                    li {
+                        display: flex;
+
+                        h4 {
+                            width: 100px;
+                            height: 20px;
+                            margin-top: 16px;
+                        }
+
+                        p {
+                            width: 230px;
+                        }
+                    }
+                }
+            }
+            // /内容
+
+            }
+        
+        // /自己紹介
+
         // スキル
         #skill {
             margin-top: 50px;
@@ -281,136 +318,70 @@ mein{
             margin-bottom: 150px;
         }
         // /お問合せフォーム＿ボタン
-    }
+    
 }
 // /グローバルスタイル_pc
 
 
 // グローバルスタイル_sp
-@media screen and (max-width: 960px){
-    header{
-        display: flex;
-        height: 90px;
-        align-items: center;
-        position: fixed;
-        top: 577px;
-
-        // タイトル
-        h1 {
-            width: 120px;
-            height: 30px;
-            font-size: 100%;
-            margin-left: 20%;
-        }
-        // /タイトル
-
-        // バーガーボタン
-        #burger {
-            display: block;
-            width: 30px;
-            height: 30px;
-            margin-left: 10%;
-            border: solid black 1px;
-            z-index: 3;
-            
-            // ラインスタイル
-            span {
-                display: block;
-                width: 20px;
-                height: 0;
-                margin: auto;
-                border: solid black 1px;
-            }
-
-            .line1{
-                margin-top: 5px;
-            }
-            .line2{
-                margin-top: 8px;
-            }
-            .line3{
-                margin-top: 8px;
-            }
-
-            .line_on_1{
-                display: block;
-                position: relative;
-                transform: rotate(45deg);
-                top: 9px;
-            }
-            .line_on_2{
-                 opacity: 0;
-            }
-            .line_on_3{
-                display: block;
-                position: relative;
-                transform: rotate(-45deg);
-                bottom: 10px;
-            }
-            // /ラインスタイル
-        }
-        // /バーガーボタン
-
-        // バーガーメニュー
-        // バーガーメニュー＿pc
-        .menu_pc {
-            display: none;
-        }
-        // /バーガーメニュー＿pc
-    }
-    // バーガーメニュー＿sp
-    .menu_sp {
-        display: block;
-        background-color: white;
-        width: 50%;
-        position: fixed;
-        z-index: 2;
-        left: -300px;
-        top: 200px;
-
-
-        li{
-            margin-bottom: 40px;
-
-            a{
-                display: block;
-                width: 80px;
-                margin: auto;
-            }
-        }
-    }
-    .burger_on {
-        left: 100px;
-    }
-    // /バーガーメニュー＿sp
-
-    // バーガー背景
-    .menu_filter{
-        display: none;
-    }
-
-    .menu_filter_on{
-        display: block;
-        z-index: 1;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-    }
-    // /バーガー背景
-    // /バーガーメニュー
+@media screen and (max-width: 960px) {
+    
 
     // メイン
     mein {
-        width: 90%;
-
         // 自己紹介
-        #selfIntroduction {
+    #selfIntroduction {
 
-            ul {
+        //  タイトル
+        h2 {
+            width: 100px;
+            margin: auto;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        //  /タイトル
+        
+        // 内容
+        .selfIntroduction {
+            position: relative;
+            display: block;
+
+            img {
+                width: 90%;
+                margin: none;
+            }
+        
+
+
+            img {
                 width: 100%;
             }
+
+            ul {
+                display: block;
+                width: 70%;
+                margin: auto;
+
+
+                li {
+                    display: flex;
+
+                    h4 {
+                        width: 100px;
+                        height: 20px;
+                        margin-top: 16px;
+                    }
+
+                    p {
+                        width: 230px;
+                    }
+                }
+            }
         }
+
+        // /内容
+    }
         // /自己紹介
 
         // スキル
@@ -454,10 +425,6 @@ mein{
         }
         // /お問合せフォーム＿ボタン
         // /メイン
-    }
-
-    .footer{
-        margin-bottom: 90px;
     }
 }
 // /グローバルスタイル_sp
